@@ -1,0 +1,276 @@
+
+
+
+
+//colors
+$main: #000000
+$red: #c90000
+
+*
+  box-sizing: border-box
+body
+  font-family: proxima-nova, sans-serif
+  letter-spacing: .5px
+  // overflow-x: hidden
+  // background: url('../images/map.jpg') 
+  // background-size: cover
+  // background-position: center
+  // background-repeat: no-repeat
+  // background-attachment: fixed
+
+
+h1, h2
+  font-size: 50px
+  line-height: 60px
+  color: $red
+  text-align: center
+h2
+  font-size: 32px
+  line-height: 40px
+  color: $red
+  margin-bottom: 2em
+
+  
+.text, .header
+  top: 50%
+  left: 50%
+  transform: translateY(-50%) translateX(-50%)
+  position: absolute
+  transition: all 1.5s
+  padding: 0 2em
+  width: 100%
+  max-width: 700px
+  margin: 0 auto
+.header
+  cursor: pointer
+  z-index: 1
+.text
+  opacity: 0
+  max-height: calc(100vh - 100px)
+  // overflow: auto
+  margin: 3em 0
+// @media (max-width: 600px)
+//   .text
+//     overflow: auto
+
+.header.go
+  opacity: 0
+.text.go
+  opacity: 1
+
+.mb
+  margin-bottom: 1rem
+.mb--big
+  margin-bottom: 2rem
+.mb--huge
+  margin-bottom: 6rem
+a, a:link, a:visited
+  color: inherit
+  margin-top: 5em
+  display: block
+
+p
+  color: $main
+  font-size: 16px
+  line-height: 22px
+  margin-bottom: 1em
+  text-align: center
+  &:last-child
+    margin-bottom: 0
+
+
+
+
+
+
+.background img
+  min-width: 910px
+  width: 100%
+  height: auto
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+// .one a
+//   text-decoration: none
+
+
+// .btn, button[type="submit"]
+//   display: inline-block
+//   font-size: 16px
+//   border: 1px $main solid
+//   background: none
+//   padding: 1em 2em
+//   text-align: center
+//   color: $main
+//   text-decoration: none
+//   transition: .7s all
+//   cursor: pointer
+//   font-family: 'Imperial'
+//   &.filled
+//     background: $main
+//     color: white
+//     border: none
+//   &.small
+//     padding: .75em 1.5em
+//   &:hover
+//     background: #f2f2f2
+// .full-width
+//   display: block
+//   width: 100%
+
+// .container
+//   max-width: 1400px
+//   padding: 1.5em
+//   margin: 0 auto
+//   width: 100%
+//   .cf:before,.cf:after
+//     content: " "
+//     display: table
+//   .cf:after
+//     clear: both
+//   .cf
+//     *zoom: 1
+//   &.container--full
+//     padding: 0
+//     max-width: none
+// .padded-box
+//   padding: 1.5em
+
+
+// .fll
+//   float: left
+// .flr
+//   float: right
+
+// .flex
+//   display: flex
+
+//   .one
+//     flex: 1
+//   .two
+//     flex: 2
+//   .three
+//     flex: 3
+//   &.flex-middle
+//     align-items: center
+//     height: 100vh
+
+
+// // top of home page
+// .home-image
+//   width: 31%
+//   min-width: 300px
+//   max-width: 580px
+//   img
+//     width: 100%
+//     height: auto
+// .home-text
+//   max-width: 525px
+//   margin: 0 auto 0 100px
+//   svg
+//     margin-bottom: 2em
+//     width: 350px
+//   p
+//     margin-left: 1em
+
+// @media (max-width: 769px)
+//   .flex.home
+//     display: block
+//   .home-image
+//     img
+//       // position: absolute
+//       margin: -220px 0 0
+
+//       width: 400px
+//   .home-text
+//     // width: 350px
+//     padding-left: 50px
+//     svg
+//       width: 250px
+// @media (max-width: 500px)
+//   .flex.flex-middle
+//     height: auto
+//   .home-image
+//     img
+//       margin: -220px 0 0
+//       width: 90%
+//   .home-text
+//     // width: 350px
+//     padding-left: 2em
+//     margin: 0 auto
+//     svg
+//       width: 180px
+//       margin-top: 2em
+//     p
+//       margin: 0
+
+//   p.big
+//     font-size: 18px
+//     line-height: 24px
+
+// //grids
+// .grid__header
+//   float: left
+//   width: 23%
+//   margin-right: 4%
+// .grid__items
+//   float: left
+//   width: 73%
+//   .one
+//     width: 30%
+//     margin-right: 3%
+//     margin-bottom: 2rem
+//     float: left
+
+//     &:nth-of-type(3n+3)
+//       margin-right: 0
+//     img
+//       display: block
+//       max-width: 100%
+//       margin-bottom: .5rem
+//       transition: .5s all
+//       // -webkit-filter: grayscale(100%) /* Safari 6.0 - 9.0 */
+//       // filter: grayscale(100%)
+//       // &:hover
+//         // filter: none
+// @media (max-width: 1100px)
+//   .grid__items
+//     .one
+//       width: 48%
+//       margin-right: 4%
+//       margin-bottom: 2rem
+//       &:nth-of-type(3n+3)
+//         margin-right: 4%
+//       &:nth-of-type(2n+2)
+//         margin-right: 0
+
+// @media (max-width: 769px)
+//   .grid__header
+//     float: none
+//     width: 75%
+//     margin-bottom: 2rem
+//   .grid__items
+//     width: 100%
+//     .one
+//       width: 47%
+//       margin-right: 6%
+//       margin-bottom: 2rem
+//       &:nth-of-type(3n+3)
+//         margin-right: 6%
+//       &:nth-of-type(2n+2)
+//         margin-right: 0
+// @media (max-width: 500px)
+//   h3
+//     font-size: 16px
+//     line-height: 22px
+// label
+//   display: block
+//   margin-bottom: 1em
+// input, textarea
+//   padding: 1em
+//   display: block
+//   width: 100%
+//   border: 1px #ccc solid
+//   margin-bottom: 2.5em
+//   font-size: 14px
